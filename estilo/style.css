@@ -1,0 +1,168 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Danger Night';
+    src: url('../fontes/Danger\ Night\ -\ Personal\ Use.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Halloween';
+    src: url('../fontes/Halloween\ Morning.ttf') format('truetype');
+}
+
+:root {
+    --fonte-padrao: Arial, Helvetica, sans-serif;
+    --fonte-destaque1: 'Danger Night';
+    --fonte-destaque2: 'Halloween'
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: var(--fonte-padrao);
+    background: darkgray url('../imagens/fundo.jpg') no-repeat fixed;
+    background-size: cover;
+    text-align: justify;
+}
+
+header {
+    background-color: rgba(169, 169, 169, 0.753);
+    padding: 10vh;
+    margin-bottom: 5px;
+    box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.493);
+    background: darkgray url('../imagens/cabecalho2.jpg') center center no-repeat fixed;
+    
+    background-size: cover;  
+}
+
+header h1 {
+    font-family: var(--fonte-destaque2);
+    text-align: center;
+    font-size: 8vh;
+    color: rgb(255, 254, 254);
+    text-shadow: 4px 4px 8px rgb(0, 0, 0);  
+}
+
+main {
+    background-color: white;
+    max-width: 1200px;
+    min-width: 320px;
+    margin: auto;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+img {
+    width: 70%;
+    padding: 5px;
+}
+
+section#resumo {
+    padding: 10px;
+    line-height: 4vh;
+    font-size: 1.2em;
+    font-family: cursive;
+}
+section.imagem {
+    box-shadow: inset 6px 6px 10px rgba(0, 0, 0, 0.555);
+}
+
+section.origem > h1{
+    font-family: var(--fonte-destaque1);
+    font-size: 3em;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    color: rgb(231, 16, 16);
+    text-shadow: 1px 1px 3px black;
+}
+
+section.origem > p {
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    line-height: 1.5em;
+    padding: 10px;
+}
+section.imagem > h1 {
+    font-family: var(--fonte-destaque1);
+    font-size: 3em;
+    color: white;
+    text-shadow: 1px 1px 2px rgb(255, 0, 0);
+}
+
+section.imagem > h1 {
+    padding: 30px 20px;
+    color: white;
+}
+section#img1 {
+    background: darkgray url('../imagens/foto2.jpg') center no-repeat fixed;
+    background-size: cover;
+    height: 65vh;
+}
+
+section #img2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 350px;
+    max-width: 100%; 
+}
+
+ul {
+    list-style: none;
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    line-height: 1.5em;
+    padding: 10px;
+}
+
+ul > li {
+    padding: 10px;
+}
+
+
+footer  {
+    background-color: rgba(0, 0, 0, 0.918);
+    padding: 10px;
+    margin-top: 10px;
+    font-family: var(--fonte-padrao);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+aside h3 {
+    font-family: var(--fonte-padrao);
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+aside li {
+    list-style-position: inside;
+    list-style-type: circle;
+}
+aside a {
+    text-decoration: none;
+    color:rgb(51, 97, 235);
+}
+
+
+aside a:hover {
+    text-decoration: underline;
+    color: orangered;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: rgb(211, 3, 3);
+}
+
+footer a:active {
+    color: orangered;
+}
